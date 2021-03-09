@@ -22,6 +22,7 @@
         var format = record.format;
         var objectLink = '{{ "/objects/" | absolute_url }}' + record.filename;
         var dataLink = record.link;
+		
 		var itemImage, itemLink;
         if (format.includes('image')) {
             itemImage= '<div class="gallery-img" data-src="' + objectLink + '"><img class="img-fluid" src="' + objectLink + '" alt="' + objectTitle + '"><p><small>Click to view full screen</small></p></div>';
