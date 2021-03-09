@@ -5,6 +5,7 @@
 function makeCard(obj) {
     // find item link
     var itemHref = "{{ '/item.html' | absolute_url | append: '?id=' }}" + obj.id;
+	var itemData = obj.link;
     // find images
     var imgSrc, thumbSrc;
     if(obj.youtube) {
